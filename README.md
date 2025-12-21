@@ -16,15 +16,9 @@ Click the image below to watch the AMR demo video:
 ## 📸 Action Graphs
 Below are the ActionGraph visualizations used in the Isaac Sim scene.
 
-### 1. Action Graph
-![ActionGraph Overview](Actiongraph.jpg)
 
-**Description**  
-This graph implements differential-drive kinematics by processing subscribed `/cmd_vel` twist messages, converting linear and angular velocities into wheel-specific commands and driving the TurtleBot3 motion through the Isaac Sim Articulation Controller with proper scaling and motion constraints.
 
----
-
-### 2. Differential Controller Graph
+### Differential Controller Graph
 ![ActionGraph Differential](Actiongraph_differential.jpg)
 
 **Description**  
@@ -32,19 +26,13 @@ This graph implements differential-drive kinematics by processing subscribed `/c
 
 ---
 
-### 3. Odometry & TF Publish Graph
-![ActionGraph Odometry & TF](Actiongraph_odom_tf.jpg)
 
-**Description**  
-This ActionGraph computes robot odometry using Isaac’s chassis state and publishes the `/odom` and `/tf` frames via the ROS 2 bridge. It ensures accurate and continuous transform broadcasting essential for navigation, mapping and RViz visualization.
-
----
 
 ## 🔧 Tools & Technologies
 - NVIDIA Isaac Sim  
 - ROS 2 (Humble)  
 - TurtleBot3 model (as AMR)  
-- Isaac ActionGraph nodes for ROS2 publishing/subscribing, odometry and controllers  
+- Isaac ActionGraph nodes s  
 - Teleop (ROS2 teleop twist publisher) for manual control
 
 ---
